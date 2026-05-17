@@ -1,0 +1,21 @@
+/* --- Akademisyen ve İdari Tema Renkleri --- */
+.green-text { color: #10b981 !important; }
+.indigo-text { color: #6366f1 !important; }
+
+.submit-btn.akademisyen-theme {
+  background-color: #10b981;
+}
+.submit-btn.akademisyen-theme:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.submit-btn.idari-theme {
+  background-color: #6366f1;
+}
+.submit-btn.idari-theme:hover {
+  background-color: #4f46e5;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
