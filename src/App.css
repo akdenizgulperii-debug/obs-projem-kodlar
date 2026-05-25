@@ -1,21 +1,47 @@
-/* --- Akademisyen ve İdari Tema Renkleri --- */
-.green-text { color: #10b981 !important; }
-.indigo-text { color: #6366f1 !important; }
+/* Genel Ayarlar */
+* { box-sizing: border-box; }
+body { margin: 0; background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, sans-serif; }
 
-.submit-btn.akademisyen-theme {
-  background-color: #10b981;
-}
-.submit-btn.akademisyen-theme:hover {
-  background-color: #059669;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+/* Giriş Ekranı Tasarımı */
+.login-container { height: 100vh; display: flex; align-items: center; justify-content: center; background: #2e7d32; }
+.login-card { background: white; padding: 40px; border-radius: 8px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+.login-btn { display: block; width: 100%; padding: 12px; margin: 10px 0; border: none; cursor: pointer; color: white; font-weight: bold; border-radius: 4px; }
+.ak { background: #1565c0; }
+.id { background: #d32f2f; }
+.og { background: #f57c00; }
+
+/* Navbar - Profesyonel Yeşil */
+.navbar { background: #2e7d32; color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+.nav-buttons button { background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 6px 14px; margin-left: 8px; border-radius: 4px; cursor: pointer; }
+
+/* Grid ve Kart Yapısı */
+.grid-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 20px; }
+.card { background: white; padding: 25px; border-radius: 8px; border: 1px solid #ddd; }
+h3 { margin-top: 0; color: #333; font-size: 1.1rem; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+
+/* Form Elemanları */
+.input-field { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; }
+.btn-submit { width: 100%; padding: 12px; background: #2e7d32; color: white; border: none; cursor: pointer; border-radius: 4px; }
+
+/* Tablo ve İstatistik */
+.data-row { display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #eee; }
+.stat-box { text-align: center; border-left: 3px solid #2e7d32; padding: 0 20px; }
+.styled-table { width: 100%; border-collapse: collapse; }
+.styled-table th, .styled-table td { border-bottom: 1px solid #ddd; padding: 15px; text-align: left; }/* Giriş Ekranı Yazı Ayarları - Burayı en alta ekle */
+.login-card h1 {
+  color: #333 !important; /* Yazıyı koyu gri yaptık */
+  font-size: 28px !important;
+  margin-bottom: 10px;
 }
 
-.submit-btn.idari-theme {
-  background-color: #6366f1;
-}
-.submit-btn.idari-theme:hover {
-  background-color: #4f46e5;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+.login-card p {
+  color: #555 !important; /* Yazıyı belirginleştirdik */
+  margin-bottom: 25px;
+  font-weight: 500;
+}/* Giriş Ekranı Başlık Yazı Rengini Netleştirme */
+.login-card h2 {
+  color: #333333 !important; /* Koyu Gri metin rengi, beyaz zemin üzerinde mükemmel kontrast sağlar */
+  font-weight: 700; /* Metni biraz kalınlaştırarak daha belirgin yapıyoruz */
+  font-size: 26px !important; /* Başlığın boyutunu hafifçe artırıyoruz */
+  margin-bottom: 20px; /* Alttaki giriş alanlarıyla arasına biraz boşluk ekliyoruz */
 }
